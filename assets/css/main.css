@@ -20,8 +20,12 @@ body{
     padding: 0 50px;
 
 }
+a{
+    text-decoration: none;
+}
 .header .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;  
     font-size: 16px;
@@ -43,11 +47,12 @@ body{
 }
 .header ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
     list-style: none;
 }
 
-a{
+.nav-links a{
     text-decoration: none;
     transition:0.8s;
 }
@@ -69,9 +74,49 @@ a{
     border: solid 2px #E7E6EF;
     width: 317px;
     height: 40px;
-    
 
 }
+.menu{
+    display: none;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+    .header .nav-links , .header form{
+         display: none;
+    } 
+    .menu{
+        display: block;
+        padding: 3px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 2px;
+        cursor: pointer
+    }
+    
+}
+ @media screen and (min-width: 769px) and (max-width: 1250px )  {
+    /* .header .container{
+        flex-direction: row;
+        gap: 20px;
+    } */
+    .header form{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+} 
+     
+    /* .header .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header form{
+        width: 100%;
+    }
+    .header form input{
+        width: 100%;
+    } */
+    
+
 .header form button{
     width: 51px;
     background-color: #FB2E86;
