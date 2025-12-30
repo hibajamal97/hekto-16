@@ -8,7 +8,7 @@
     --secondary-color: #FB2E86;
     --primery-color: #0D0E43; 
     --secodnary-font-family: 'Lato', sans-serif;
-    --primery-font-family:Josefin Sans;
+    --primary-font-family: 'Josefin Sans';
 }
 body{
    font-family: var(--secodnary-font-family);
@@ -85,7 +85,7 @@ ul{
 }
 #footer{
     background-color: #EEEFFB;
-    margin: 122px 0;
+   
 }
 #footer .container{
     height: 1920px;
@@ -131,13 +131,18 @@ ul{
   background: rgba(255, 255, 255, 0.45);
 
 }
-#footer form button{
+#footer form button , .hero-btn{
     width: 135px;
     background-color: #FB2E86;
     border-style: none;
     cursor: pointer;
     border-radius: 3px;
     color: #ffff;
+}
+.hero-btn{
+    height: 48px;
+    font-size: 17px;
+    text-transform: capitalize;
 }
 #footer .contact-info{
     margin-top: 27px;
@@ -159,7 +164,7 @@ ul{
     gap: 40px;
 }
 #footer h3{
-    font-family: var(--primery-font-family);
+    font-family: var(--primary-font-family);
     font-size: 22px;
     font-weight: 600;
 }
@@ -174,7 +179,34 @@ ul{
 #footer li{
     margin-top: 23px;
 } 
+.hero{
+    background-image: url('/assets/images/hero-bg.png');
+    height: 462px;
+    margin-top: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+}
+.hero .container{
+      width: 574px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
 
+}
+
+.hero-title{
+    font-family: var(--primary-font-family);
+    font-size: 35px;
+    font-weight: 700;
+    color: #151875;
+    /* filter: drop-shadow(0px 4px 4px #00000073); */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 45%);
+}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
@@ -198,7 +230,19 @@ ul{
         justify-content: center;
         width: 100%;
     }
+    .hero-title{
+        font-size: 26px;
+    }
+    #footer .footer-form{
+        width:295px;
+    }
+    .hero .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+   
 }
+
  @media screen and (min-width: 769px) and (max-width: 1250px )  {
     /* .header .container{
         flex-direction: row;
@@ -216,7 +260,9 @@ ul{
         gap: 30px;
         justify-content:space-between; 
      }
-  
+    .hero-title{
+        font-size: 26px;
+    }
 
     .header form{
         width: 100%;
