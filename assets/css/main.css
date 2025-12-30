@@ -180,7 +180,7 @@ ul{
     margin-top: 23px;
 } 
 .hero{
-    background-image: url('/assets/images/hero-bg.png');
+    background-image: url('../images/hero-bg.png');
     height: 462px;
     margin-top: 122px;
     display: flex;
