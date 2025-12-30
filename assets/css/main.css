@@ -128,7 +128,7 @@ ul{
   width: 266px;
   border-style: none;
   padding-left: 20px;
-  opacity :rgba(0, 0, 0, 0.45)
+  background: rgba(255, 255, 255, 0.45);
 
 }
 #footer form button{
